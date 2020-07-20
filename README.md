@@ -2,7 +2,7 @@
 
 [![HitCount](http://hits.dwyl.com/silva-thiago/dev-thiagosilva.svg)](http://hits.dwyl.com/silva-thiago/dev-thiagosilva)
 
-Uma versão online deste projeto pode ser encontrada em: [dev.thiagosilva.vercel.app](https://dev.thiagosilva.vercel.app/)
+Uma versão online deste projeto pode ser encontrada em: [dev-thiagosilva.vercel.app](https://dev-thiagosilva.vercel.app/)
 
 ![Preview](https://github.com/silva-thiago/dev-thiagosilva)
 
