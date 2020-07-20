@@ -18,7 +18,23 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "gatsby": "^2.24.7",
+    "gatsby-cli": "^2.12.63",
+    "gatsby-image": "^2.4.13",
+    "gatsby-plugin-manifest": "^2.4.19",
+    "gatsby-plugin-offline": "^3.2.19",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sharp": "^2.6.20",
+    "gatsby-source-filesystem": "^2.3.20",
+    "gatsby-transformer-sharp": "^2.5.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
   "repository": "github:silva-thiago/dev-thiagosilva.git"
 }
