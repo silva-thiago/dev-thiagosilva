@@ -2,12 +2,23 @@
   "name": "dev-thiagosilva",
   "version": "1.0.0",
   "description": "Developer portfolio",
-  "keywords": ["portfolio, dev portfolio, portfólio, portfólio de desenvolvedor, site de desenvolvedor"],
+  "keywords": [
+    "portfolio, dev portfolio, portfólio, portfólio de desenvolvedor, site de desenvolvedor"
+  ],
   "homepage": "https://github.com/silva-thiago/dev-thiagosilva.git#readme",
+  "license": "MIT",
+  "author": "thiagosilva <thiago.silva@imd.ufrn.br> (http://dev.thiagosilva.cc/)",
   "main": "index.tsx",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {},
   "devDependencies": {},
-  "repository": "github:silva-thiago/dev-thiagosilva.git",
-  "author": "thiagosilva <thiago.silva@imd.ufrn.br> (http://dev.thiagosilva.cc/)",
-  "license": "See MIT license in LICENSE.md"
+  "repository": "github:silva-thiago/dev-thiagosilva.git"
 }
