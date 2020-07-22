@@ -1,0 +1,7 @@
+.footer {
+  background-color: $grey-lighten-4;
+}
+
+.footer > .container {
+  @extend %my-2;
+}
