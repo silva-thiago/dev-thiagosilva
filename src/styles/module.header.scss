@@ -2,6 +2,10 @@ nav {
   @extend %py-2;
 }
 
-.purple-gradient {
-  background: $purple-gradient;
+.logotype {
+  display: inline-block;
+  height: 1.8rem;
+  vertical-align: top;
+  width: 1.8rem;
+  @extend %mx-2;
 }
