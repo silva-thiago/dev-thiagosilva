@@ -1,8 +1,83 @@
 /* Font Family */
-$font-sans: TIActuBeta-ExBold_web, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Tahoma, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
-$font-serif: SwiftNeueLTW01, Georgia, Cambria, "Times New Roman", Times, serif;
-$font-extra-bold-mono: TIActuBetaMono-ExBold_web, Consolas, "Andale Mono", monospace;
-$font-regular-mono: TIActuBetaMono-Regular_web, Consolas, "Andale Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-mono:
+// Base
+TIActuBetaMono-Regular_web, Consolas, "Andale Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+Roboto,
+// Basic web fallback
+"Helvetica Neue", Arial,
+// Linux
+"Noto Sans",
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", 
+// Monospace fallback
+monospace !default;
+
+$font-extra-mono:
+// Base
+TIActuBetaMono-ExBold_web, Consolas, "Andale Mono", 
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+Roboto,
+// Basic web fallback
+"Helvetica Neue", Arial,
+// Linux
+"Noto Sans",
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", 
+// Monospace fallback
+monospace;
+
+$font-serif:
+// Base
+SwiftNeueLTW01, Georgia, Cambria, "Times New Roman", Times, 
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+Roboto,
+// Basic web fallback
+"Helvetica Neue", Arial,
+// Linux
+"Noto Sans",
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", 
+// Serif fallback
+serif;
+
+$font-sans:
+// Base
+TIActuBeta-ExBold_web, system-ui,
+// Safari for macOS and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for macOS (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+Roboto,
+// Basic web fallback
+"Helvetica Neue", Arial,
+// Linux
+"Noto Sans",
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", 
+// Sans Serif fallback
+sans-serif;
 
 /* Font Size */
 $text-xs: .75rem;
