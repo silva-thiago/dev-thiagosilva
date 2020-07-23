@@ -3,7 +3,7 @@ $bg-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' v
 body {
   background-image: $bg-pattern;
   color: $grey-darken-4;
-  font-family: $font-regular-mono;
+  font-family: $font-mono;
   font-size: $text-base;
   font-style: $not-italic;
   font-weight: $font-normal;
@@ -13,25 +13,40 @@ body {
   @extend %antialiased;
 }
 
-.content {
-  align-items: center;
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+main > .container {
+  @extend %py-16; 
+  @extend %px-4;
+}
+
+section {
+  @extend %h-screen;
+  @extend %py-4;
   // width: 100vw;
 }
 
-main > .container {
-  padding: 60px 15px 0;
+.h-start-alignment {
+  @extend %flex;
+  @extend %flex-col;
+  @extend %m-0;
+  @extend %p-0;
+  @extend %content-start;
+  @extend %justify-start;
 }
 
-/* %container {
-None	width: 100%;
-sm (640px)	max-width: 640px;
-md (768px)	max-width: 768px;
-lg (1024px)	max-width: 1024px;
-xl (1280px)	max-width: 1280px;
-} */
+.h-center-alignment {
+  @extend %flex;
+  @extend %flex-col;
+  @extend %m-0;
+  @extend %p-0;
+  @extend %content-center;
+  @extend %justify-center;
+}
+
+.h-end-alignment {
+  @extend %flex;
+  @extend %flex-col;
+  @extend %m-0;
+  @extend %p-0;
+  @extend %content-end;
+  @extend %justify-end;
+}
