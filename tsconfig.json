@@ -1,0 +1,12 @@
+{
+  "include": [
+    "./src/components/*",
+    "./src/pages/*"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "es2020"
+    ],
+    "jsx": "react"
+  }
+}
