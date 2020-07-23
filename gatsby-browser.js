@@ -4,4 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+import './src/styles/bootstrap/bootstrap-reboot.scss'
+import './src/styles/bootstrap/bootstrap-grid.scss'
+import './src/styles/bootstrap/bootstrap.scss'
+
+import './src/styles/index.scss'
