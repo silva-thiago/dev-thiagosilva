@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
@@ -9,6 +9,7 @@ const links = [
 ]
 
 const Header = ({ siteTitle }) => {
+  const ref = useRef('noopener noreferrer')
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "logotype.png"}) {
@@ -25,17 +26,17 @@ const Header = ({ siteTitle }) => {
     <React.Fragment>
       <header>
         {/* Fixed navbar */}
-        <nav className='nav fixed-top'>
-          <div className='d-flex justify-content-between items-center list-unstyled mb-0 mr-auto'>
+        <nav className='nav navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm'>
+          <div className='d-flex justify-content-between items-center mb-0'>
             <Link className='navbar-brand' to='/'>
-              <Img className='logotype' fluid={data.placeholderImage.childImageSharp.fluid} alt='Logotipo' loading='auto' />
+              <Img className='logo' fluid={data.placeholderImage.childImageSharp.fluid} alt='Logotipo' loading='auto' />
               <span className='text-dark'>{siteTitle} Developer_</span>
             </Link>
           </div>
           <ul className='list-unstyled mb-0'>
             {links.map(({ href, label, target }) => (
               <li className='btn-group mx-2' key={`${href}${label}${target}`}>
-                <a className='btn btn-sm btn-outline-dark rounded-pill' href={href} target={target} role='button'>
+                <a className='btn btn-outline-dark rounded-pill' href={href} target={target} ref={ref} role='button'>
                   {label}
                 </a>
               </li>
