@@ -1,11 +1,12 @@
-@import './_colors.scss';
+@import './colors';
 @import './flex-box';
-@import './_gradient.scss';
+@import './gradient';
+@import './grid';
 @import './layout';
 @import './sizing';
 @import './spacing';
-@import './_typography.scss';
+@import './typography';
 
-@import './module.layout.scss';
-@import './module.header.scss';
-@import './module.footer.scss';
+@import './module.layout';
+@import './module.header';
+@import './module.footer';

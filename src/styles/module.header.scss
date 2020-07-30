@@ -1,11 +1,22 @@
-nav {
-  @extend %py-2;
+.nav {
+  align-items: center;
+  // display: flex;
+  // height: 4rem;
+  justify-content: space-between;
+  // padding: 1rem 2rem;
+  // position: fixed;
+  // top: 0;
+  // min-width: 540px;
+  // z-index: 100;
 }
 
-.logotype {
+.logo {
   display: inline-block;
   height: 1.8rem;
+  max-width: 6rem;
+  pointer-events: none;
   vertical-align: top;
   width: 1.8rem;
+  z-index: 100;
   @extend %mx-2;
 }
