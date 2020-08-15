@@ -1,0 +1,252 @@
+/* Font Family */
+$font-mono:
+// Base
+'TIActuBetaMono-Regular_web', 'Consolas', 'Andale Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New',
+// Safari for macOS and iOS (San Francisco)
+'-apple-system',
+// Chrome < 56 for macOS (San Francisco)
+'BlinkMacSystemFont',
+// Windows
+'Segoe UI',
+// Android
+'Roboto',
+// Basic web fallback
+'Helvetica Neue', 'Arial',
+// Linux
+'Noto Sans',
+// Emoji fonts
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 
+// Monospace fallback
+monospace !default;
+
+$font-extra-mono:
+// Base
+'TIActuBetaMono-ExBold_web', 'Consolas', 'Andale Mono', 
+// Safari for macOS and iOS (San Francisco)
+'-apple-system',
+// Chrome < 56 for macOS (San Francisco)
+'BlinkMacSystemFont',
+// Windows
+'Segoe UI',
+// Android
+'Roboto',
+// Basic web fallback
+'Helvetica Neue', 'Arial',
+// Linux
+'Noto Sans',
+// Emoji fonts
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 
+// Monospace fallback
+monospace;
+
+$font-serif:
+// Base
+'SwiftNeueLTW01', Georgia, 'Cambria', 'Times New Roman', Times, 
+// Safari for macOS and iOS (San Francisco)
+'-apple-system',
+// Chrome < 56 for macOS (San Francisco)
+'BlinkMacSystemFont',
+// Windows
+'Segoe UI',
+// Android
+'Roboto',
+// Basic web fallback
+'Helvetica Neue', 'Arial',
+// Linux
+'Noto Sans',
+// Emoji fonts
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 
+// Serif fallback
+serif;
+
+$font-sans:
+// Base
+'TIActuBeta-ExBold_web', 'system-ui',
+// Safari for macOS and iOS (San Francisco)
+'-apple-system',
+// Chrome < 56 for macOS (San Francisco)
+'BlinkMacSystemFont',
+// Windows
+'Segoe UI',
+// Android
+'Roboto',
+// Basic web fallback
+'Helvetica Neue', 'Arial',
+// Linux
+'Noto Sans',
+// Emoji fonts
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 
+// Sans Serif fallback
+sans-serif;
+
+/* Font Size */
+$text-xs: .75rem;
+$text-sm: .875rem;
+$text-base: 1rem;
+$text-lg: 1.125rem;
+$text-xl: 1.25rem;
+$text-2xl: 1.5rem;
+$text-3xl: 1.875rem;
+$text-4xl: 2.25rem;
+$text-5xl: 3rem;
+$text-6xl: 4rem;
+
+/* Font Smoothing */
+%antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+/* Font Style */
+$italic: italic;
+$not-italic: normal;
+
+/* Font Weight */
+$font-hairline: 100;
+$font-thin: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-extra-bold: 800;
+$font-black: 900;
+
+/* Letter Spacing */
+$tracking-tighter: -0.05em;
+$tracking-tight: -0.025em;
+$tracking-normal: 0;
+$tracking-wide: 0.025em;
+$tracking-wider: 0.05em;
+$tracking-widest: 0.1em;
+
+/* Line Height */
+$leading-none: 1;
+$leading-tight: 1.25;
+$leading-snug: 1.375;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;
+$leading-loose: 2;
+$leading-3: .75rem;
+$leading-4: 1rem;
+$leading-5: 1.25rem;
+$leading-6: 1.5rem;
+$leading-7: 1.75rem;
+$leading-8: 2rem;
+$leading-9: 2.25rem;
+$leading-10: 2.5rem;
+
+/** Text Alignment **/
+$text-left: left;
+$text-center: center;
+$text-right: right;
+$text-justify: justify;
+
+/** Text color **/
+$text-transparent: transparent;
+$text-current: currentColor;
+$text-black: rgb(0, 0, 0);
+$text-white: rgb(255, 255, 255);
+$text-gray-100: rgb(247, 250, 252);
+$text-gray-200: rgb(237, 242, 247);
+$text-gray-300: rgb(226, 232, 240);
+$text-gray-400: rgb(203, 213, 224);
+$text-gray-500: rgb(160, 174, 192);
+$text-gray-600: rgb(113, 128, 150);
+$text-gray-700: rgb(74, 85, 104);
+$text-gray-800: rgb(45, 55, 72);
+$text-gray-900: rgb(26, 32, 44);
+$text-red-100: rgb(255, 245, 245);
+$text-red-200: rgb(254, 215, 215);
+$text-red-300: rgb(254, 178, 178);
+$text-red-400: rgb(252, 129, 129);
+$text-red-500: rgb(245, 101, 101);
+$text-red-600: rgb(229, 62, 62);
+$text-red-700: rgb(197, 48, 48);
+$text-red-800: rgb(155, 44, 44);
+$text-red-900: rgb(116, 42, 42);
+$text-orange-100: rgb(255, 250, 240);
+$text-orange-200: rgb(254, 235, 200);
+$text-orange-300: rgb(251, 211, 141);
+$text-orange-400: rgb(246, 173, 85);
+$text-orange-500: rgb(237, 137, 54);
+$text-orange-600: rgb(221, 107, 32);
+$text-orange-700: rgb(192, 86, 33);
+$text-orange-800: rgb(156, 66, 33);
+$text-orange-900: rgb(123, 52, 30);
+$text-yellow-100: rgb(255, 255, 240);
+$text-yellow-200: rgb(254, 252, 191);
+$text-yellow-300: rgb(250, 240, 137);
+$text-yellow-400: rgb(246, 224, 94);
+$text-yellow-500: rgb(236, 201, 75);
+$text-yellow-600: rgb(214, 158, 46);
+$text-yellow-700: rgb(183, 121, 31);
+$text-yellow-800: rgb(151, 90, 22);
+$text-yellow-900: rgb(116, 66, 16);
+$text-green-100: rgb(240, 255, 244);
+$text-green-200: rgb(198, 246, 213);
+$text-green-300: rgb(154, 230, 180);
+$text-green-400: rgb(104, 211, 145);
+$text-green-500: rgb(72, 187, 120);
+$text-green-600: rgb(56, 161, 105);
+$text-green-700: rgb(47, 133, 90);
+$text-green-800: rgb(39, 103, 73);
+$text-green-900: rgb(34, 84, 61);
+$text-teal-100: rgb(230, 255, 250);
+$text-teal-200: rgb(178, 245, 234);
+$text-teal-300: rgb(129, 230, 217);
+$text-teal-400: rgb(79, 209, 197);
+$text-teal-500: rgb(56, 178, 172);
+$text-teal-600: rgb(49, 151, 149);
+$text-teal-700: rgb(44, 122, 123);
+$text-teal-800: rgb(40, 94, 97);
+$text-teal-900: rgb(35, 78, 82);
+$text-blue-100: rgb(235, 248, 255);
+$text-blue-200: rgb(190, 227, 248);
+$text-blue-300: rgb(144, 205, 244);
+$text-blue-400: rgb(99, 179, 237);
+$text-blue-500: rgb(66, 153, 225);
+$text-blue-600: rgb(49, 130, 206);
+$text-blue-700: rgb(43, 108, 176);
+$text-blue-800: rgb(44, 82, 130);
+$text-blue-900: rgb(42, 67, 101);
+$text-indigo-100: rgb(235, 244, 255);
+$text-indigo-200: rgb(195, 218, 254);
+$text-indigo-300: rgb(163, 191, 250);
+$text-indigo-400: rgb(127, 156, 245);
+$text-indigo-500: rgb(102, 126, 234);
+$text-indigo-600: rgb(90, 103, 216);
+$text-indigo-700: rgb(76, 81, 191);
+$text-indigo-800: rgb(67, 65, 144);
+$text-indigo-900: rgb(60, 54, 107);
+$text-purple-100: rgb(250, 245, 255);
+$text-purple-200: rgb(233, 216, 253);
+$text-purple-300: rgb(214, 188, 250);
+$text-purple-400: rgb(183, 148, 244);
+$text-purple-500: rgb(159, 122, 234);
+$text-purple-600: rgb(128, 90, 213);
+$text-purple-700: rgb(107, 70, 193);
+$text-purple-800: rgb(85, 60, 154);
+$text-purple-900: rgb(68, 51, 122);
+$text-pink-100: rgb(255, 245, 247);
+$text-pink-200: rgb(254, 215, 226);
+$text-pink-300: rgb(251, 182, 206);
+$text-pink-400: rgb(246, 135, 179);
+$text-pink-500: rgb(237, 100, 166);
+$text-pink-600: rgb(213, 63, 140);
+$text-pink-700: rgb(184, 50, 128);
+$text-pink-800: rgb(151, 38, 109);
+$text-pink-900: rgb(112, 36, 89);
+
+/* Text Transform */
+$uppercase: uppercase;
+$lowercase: lowercase;
+$capitalize: capitalize;
+$normal-case: none;
+

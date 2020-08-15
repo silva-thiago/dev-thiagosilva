@@ -1,0 +1,33 @@
+/** section styles **/
+section {
+  @extend %h-screen;
+  @extend %py-4;
+  // width: 100vw;
+}
+
+.h-start-alignment {
+  @extend %flex;
+  @extend %flex-col;
+  @extend %m-0;
+  @extend %p-0;
+  @extend %content-start;
+  @extend %justify-start;
+}
+
+.h-center-alignment {
+  @extend %flex;
+  @extend %flex-col;
+  @extend %m-0;
+  @extend %p-0;
+  @extend %content-center;
+  @extend %justify-center;
+}
+
+.h-end-alignment {
+  @extend %flex;
+  @extend %flex-col;
+  @extend %m-0;
+  @extend %p-0;
+  @extend %content-end;
+  @extend %justify-end;
+}  

@@ -1,0 +1,20 @@
+/* core styles  */
+@import './core/backgrounds';
+@import './core/borders';
+@import './core/colors';
+@import './core/flex-box';
+@import './core/gradient';
+@import './core/grid';
+@import './core/layout';
+@import './core/sizing';
+@import './core/spacing';
+@import './core/typography';
+
+/* breakpoint */
+@import './core/breakpoints';
+
+/* component styles */
+@import './component/Layout';
+@import './component/Header';
+@import './component/Section';
+@import './component/Footer';
