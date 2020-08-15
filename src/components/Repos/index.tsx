@@ -1,8 +1,7 @@
-import React, { useRef } from 'react'
+import React, { ReactNode } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const Repos = () => {
-  const ref = useRef('noopener noreferrer')
   const data = useStaticQuery(graphql`
     query {
       allGithubData {
@@ -57,11 +56,11 @@ const Repos = () => {
     <React.Fragment>
       <h3 className='text-center'>Tech contributions</h3>
       <div className='row row-cols-1 row-cols-md-3'>
-        {repos.map(repo => (
+        {repos.map((repo) => (
           <div className='col py-4' key={repo.id}>
             <div className='card h-100 shadow border-0'>
               <div className="card-header bg-transparent border-0">
-                <a className='text-decoration-none' href={repo.url} target='_blank' ref={ref}>
+                <a className='text-decoration-none' href={repo.url} target='_blank' rel='noopener noreferrer'>
                   <strong>{user.login}/{repo.name}</strong>
                 </a>
               </div>

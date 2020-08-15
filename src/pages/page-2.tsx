@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Layout, SEO } from '../components'
+import { Landing, SEO } from '../components'
 
 const SecondPage = () => {
   return (
     <React.Fragment>
-      <Layout>
+      <Landing>
         <SEO title='Page two' />
         <h1>Hi from the second page</h1>
         <p>Welcome to page 2</p>
         <Link to='/'>Go back to the homepage</Link>
-      </Layout>
+      </Landing>
     </React.Fragment>
   )
 }

@@ -1,10 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { ReactNode } from 'react'
+// import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { Header, Footer } from '../index'
 
-const Layout = ({ children }) => {
+export interface IProps {
+  children: ReactNode
+}
+
+const Landing: React.FC<IProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,7 +24,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
       {/* Begin page content */}
-      <main role='main' className='flex-shrink-0'>
+      <main role='main'>
         <div className='container'>
           {children}
         </div>
@@ -30,8 +34,8 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
+/* Landing.propTypes = {
   children: PropTypes.node.isRequired,
-}
+} */
 
-export default Layout
+export default Landing

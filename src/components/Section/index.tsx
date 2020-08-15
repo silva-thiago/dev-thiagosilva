@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Section = ({ children }) => {
+export interface IProps {
+  children: ReactNode
+}
+
+const Section: React.FC<IProps> = ({ children }) => {
   return (
     <React.Fragment>
       <section className='h-center-alignment'>

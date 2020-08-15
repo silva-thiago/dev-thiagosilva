@@ -1,9 +1,9 @@
-import Header from './header'
-import Layout from './layout'
-import Footer from './footer'
-import Section from './section'
-import Repos from './repos'
-import SEO from './seo'
-import Image from './image'
+import Header from './Header'
+import Landing from './Landing'
+import Footer from './Footer'
+import Section from './Section'
+import Repos from './Repos'
+import SEO from './SEO'
+import Image from './Image'
 
-export { Header, Layout, Footer, Section, Repos, SEO, Image }
+export { Header, Landing, Footer, Section, Repos, SEO, Image }

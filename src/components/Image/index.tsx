@@ -28,7 +28,7 @@ const Image = () => {
 
   return (
     <React.Fragment>
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} alt='Astronaut' loading='auto' />
+      <Img fluid={data.placeholderImage.childImageSharp.fluid} alt='Astronaut draw' loading='auto' />
     </React.Fragment>
   )
 }

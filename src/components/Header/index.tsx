@@ -1,15 +1,18 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+
+interface IProps {
+  siteTitle: string,
+}
 
 const links = [
   { href: 'https://github.com/silva-thiago', label: 'GitHub', target: '_blank' },
   { href: 'https://www.linkedin.com/in/tjlsilva/', label: 'LinkedIn', target: '_blank' },
 ]
 
-const Header = ({ siteTitle }) => {
-  const ref = useRef('noopener noreferrer')
+const Header:React.FC<IProps> = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "logotype.png"}) {
@@ -36,7 +39,7 @@ const Header = ({ siteTitle }) => {
           <ul className='list-unstyled mb-0'>
             {links.map(({ href, label, target }) => (
               <li className='btn-group mx-2' key={`${href}${label}${target}`}>
-                <a className='btn btn-outline-dark rounded-pill' href={href} target={target} ref={ref} role='button'>
+                <a className='btn btn-outline-dark rounded-pill' href={href} target={target} rel='noopener noreferrer' role='button'>
                   {label}
                 </a>
               </li>
