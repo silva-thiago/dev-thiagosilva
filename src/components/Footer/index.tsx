@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Footer = ({ siteAuthor }) => {
   return (
     <React.Fragment>
-      <footer className='footer py-2'>
+      <footer className='footer'>
         <div className='container'>
           <span className='text-muted'>
             © {new Date().getFullYear()} <a className='text-decoration-none' href='https://github.com/silva-thiago' target='_blank' rel='noopener noreferrer'>{siteAuthor}</a><br />
