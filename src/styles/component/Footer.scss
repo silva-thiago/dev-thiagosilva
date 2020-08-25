@@ -1,7 +1,9 @@
 .footer {
   background-color: $grey-lighten-4;
-}
+  @extend %mb-20;
 
-.footer > .container {
-  @extend %my-2;
+  @include for-size(laptop-up) {
+    bottom: 0;
+    // position: sticky;
+  }
 }

@@ -1,35 +1,35 @@
 @mixin for-size($point) {
   @if $point == phone-only-landscape {
     @media screen and (max-height: 767px) and (orientation: landscape)  {
-      @content; // @include for-size(phone-only-landscape)
+      @content; // @include for-size(phone-only-landscape) {}
     }
   } @else if $point == phone-only {
     @media screen and (max-width: 639px) {
-      @content; // @include for-size(phone-only)
+      @content; // @include for-size(phone-only) {}
     }
   } @else if $point == tablet-portrait-up {
     @media screen and (min-width: 640px) {
-      @content; // @include for-size(tablet-portrait-up)
+      @content; // @include for-size(tablet-portrait-up) {}
     }
   } @else if $point == tablet-landscape-up {
     @media screen and (min-width: 768px) {
-      @content; // @include for-size(tablet-landscape-up)
+      @content; // @include for-size(tablet-landscape-up) {}
     }
   } @else if $point == laptop-up {
     @media screen and (min-width: 1024px) {
-      @content; // @include for-size(laptop-up)
+      @content; // @include for-size(laptop-up) {}
     }
   } @else if $point == big-laptop-up {
     @media screen and (min-width: 1280px) {
-      @content; // @include for-size(big-laptop-up)
+      @content; // @include for-size(big-laptop-up) {}
     }
   } @else if $point == desktop-up {
     @media screen and (min-width: 1440px) {
-      @content; // @include for-size(big-desktop-up)
+      @content; // @include for-size(big-desktop-up) {}
     }
   } @else if $point == screen-up {
     @media screen and (min-width: 2560px) {
-      @content; // @include for-size(screen-up)
+      @content; // @include for-size(screen-up) {}
     }
   }
 }

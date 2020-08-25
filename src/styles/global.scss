@@ -1,3 +1,6 @@
+/* breakpoint */
+@import './core/breakpoints';
+
 /* core styles  */
 @import './core/backgrounds';
 @import './core/borders';
@@ -10,11 +13,13 @@
 @import './core/spacing';
 @import './core/typography';
 
-/* breakpoint */
-@import './core/breakpoints';
+/* element styles */
+@import './elements/button';
+@import './elements/card';
 
 /* component styles */
-@import './component/Layout';
+@import './component/App';
+@import './component/Navbar';
 @import './component/Header';
 @import './component/Section';
 @import './component/Footer';
