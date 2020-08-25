@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 const SEO = ({ lang, meta, description, title }) => {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query Metadata {
         site {
           siteMetadata {
             title
