@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageProps, Link, graphql } from 'gatsby'
 
-import { Landing, SEO } from '../components'
+import SEO from '../components/SEO'
 
 type DataProps = {
   site: {
@@ -12,7 +12,6 @@ type DataProps = {
 const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   return (
     <React.Fragment>
-      <Landing>
         <SEO title='Using TypeScript' />
         <h1>Gatsby supports TypeScript by default!</h1>
         <p>
@@ -33,7 +32,6 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           <a href='https://www.gatsbyjs.org/docs/typescript/' target='_blank'>documentation about TypeScript</a>.
         </p>
         <Link to='/'>Go back to the homepage</Link>
-      </Landing>
     </React.Fragment>
   )
 }
