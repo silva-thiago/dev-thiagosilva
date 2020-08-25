@@ -1,9 +1,8 @@
 // init. environment variables
 const dotenv = require('dotenv')
+const { githubApiQuery } = require('./src/data/github-api')
 
 dotenv.config()
-
-const { githubApiQuery } = require('./src/data/github-api')
 
 module.exports = {
   siteMetadata: {
@@ -41,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
+        url: 'https://api.github.com/graphql', // default Github GraphQL v4 API endpoint
   
         // token: required by the GitHub API
         token: process.env.GITHUB_PERSONAL_ACCESS_TOKEN,
@@ -54,6 +53,12 @@ module.exports = {
           github_login: process.env.GITHUB_LOGIN
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
     },
   ],
 }
